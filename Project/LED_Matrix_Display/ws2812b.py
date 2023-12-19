@@ -1,6 +1,5 @@
 """
 Author: Newt
-Version: 1.0
 """
 import board
 import neopixel
