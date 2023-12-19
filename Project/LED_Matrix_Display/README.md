@@ -3,8 +3,8 @@
 ## 目錄
 - [硬體環境](#硬體環境)
 - [系統設定](#系統設定)
+- [範例](#範例)
 - [備註](#備註)
-- [客制化模組](#客制化模組)
 
 ## 硬體環境
 - Raspberry Pi 3 Model B+ V1.2
@@ -113,12 +113,14 @@
     ```bash
     sudo apt clean
     ```
+    
 - ### 建立虛擬環境
     新建虛擬環境
     ```bash
     python3 -m venv .venv    
     ```
     [虛擬環境使用方式](#虛擬環境)
+
 - ### 安裝 Python 模組
     ```bash
     pip install -r requirement.txt
@@ -132,12 +134,12 @@
     ```
 
 ## 範例
-### 模組化
+### 自製模組
 - [ws2812b](ws2812b.py)
 - [pixelation](pixelation.py)
-### 範例
-- [sample](sample.py)
 
+### 主程式
+- [sample](sample.py)
 
 ## 備註
 - ### 虛擬環境
