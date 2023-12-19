@@ -17,16 +17,16 @@
     - 16 x 16 矩陣 LED
 
 ## 系統設定
-- ### 修改網路設定
+- ### 修改網路參數
     查看網路資訊
     ```bash
     ip address
     ```
-    修改網路設定
+    編輯網路參數
     ```bash
     sudo nano /etc/netplan/50-cloud-init.yaml
     ```
-    
+    [網路參數範例](#50-cloud-inityaml參數)
 
 - ### 安裝 SSH Server
     安裝 SSH
@@ -118,9 +118,10 @@
     ```bash
     python3 -m venv .venv    
     ```
+    [虛擬環境使用方式](#虛擬環境)
 - ### 安裝 Python 模組
     ```bash
-    pip install RPi.GPIO rpi_ws281x adafruit-circuitpython-neopixel Pillow
+    pip install -r requirement.txt
     ```
     ```bash
     python3 -m pip install --force-reinstall adafruit-blinka
@@ -130,11 +131,14 @@
     pip cache purge
     ```
 
-- ### 開啟 SPI
-    ```bash
-    sudo raspi-config
-    ```
-    `Interface Options` -> `SPI` -> `YES`
+## 範例
+### 模組化
+- [ws2812b](ws2812b.py)
+- [pixelation](pixelation.py)
+### 範例
+- [sample](sample.py)
+
+
 ## 備註
 - ### 虛擬環境
     進入虛擬環境
@@ -179,4 +183,3 @@
         version: 2
     ```
     
-## 客制化模組
