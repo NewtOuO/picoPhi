@@ -26,7 +26,7 @@
     ```bash
     sudo nano /etc/netplan/50-cloud-init.yaml
     ```
-    [網路參數範例](#50-cloud-inityaml參數)
+    [參數範例](#50-cloud-inityaml參數)
 
 - ### 安裝 SSH Server
     安裝 SSH
@@ -122,6 +122,7 @@
     [虛擬環境使用方式](#虛擬環境)
 
 - ### 安裝 Python 模組
+    套件清單：[requirement.txt](requirement.txt)
     ```bash
     pip install -r requirement.txt
     ```
@@ -135,11 +136,14 @@
 
 ## 範例
 ### 自製模組
-- [ws2812b](ws2812b.py)
-- [pixelation](pixelation.py)
+- [LED 燈條控制](led_strip.py)
+- [點陣化](pixelation.py)
 
 ### 主程式
-- [sample](sample.py)
+- [Demo](demo.py)
+
+### 字型
+- [思源黑體](NotoSansTC.ttf)
 
 ## 備註
 - ### 虛擬環境
