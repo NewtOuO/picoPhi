@@ -136,7 +136,7 @@
 
 ## 範例
 ### 自製模組
-- [LED 燈條控制](led_strip.py)
+- [WS2812B 控制](ws2812b.py)
 - [點陣化](pixelation.py)
 
 ### 主程式
@@ -144,6 +144,12 @@
 
 ### 字型
 - [思源黑體](NotoSansTC.ttf)
+
+### 圖片
+- [圖一](sprite_0.png)
+- [圖二](sprite_1.png)
+- [圖三](sprite_2.png)
+- [圖四](sprite_3.png)
 
 ## 備註
 - ### 虛擬環境
