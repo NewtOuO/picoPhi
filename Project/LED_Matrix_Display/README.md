@@ -7,7 +7,7 @@
 - [備註](#備註)
 
 ## 硬體環境
-- Raspberry Pi 3 Model B+ V1.2
+- Raspberry Pi 3 Model B+
 
     - Ubuntu 22.04.3 LTS
 
@@ -146,10 +146,10 @@
 - [思源黑體](NotoSansTC.ttf)
 
 ### 圖片
-- [圖一](sprite_0.png)
-- [圖二](sprite_1.png)
-- [圖三](sprite_2.png)
-- [圖四](sprite_3.png)
+- [圖一](img_0.png)
+- [圖二](img_1.png)
+- [圖三](img_2.png)
+
 
 ## 備註
 - ### 虛擬環境
