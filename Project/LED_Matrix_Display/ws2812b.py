@@ -7,7 +7,7 @@ import numpy as np
 from typing import Union
 
 
-class StripRGB:
+class Strip:
     def __init__(self, count: int, pin: board = board.D10) -> None:
         self._led = neopixel.NeoPixel(
             pin=pin, n=count, brightness=0.0625, auto_write=False
