@@ -11,14 +11,22 @@ class TextPixelator:
         self._font_size = font_size
         self._font_type = font_type
 
-    def text_px(self, text: str, offset: tuple = (0, 0)):
-        pixel = Image.new("1", (self._pixel_width, self._pixel_height), color=0)
+    def text_px(
+        self,
+        text: str,
+        offset: tuple = (0, 0),
+        pattern: tuple = (255, 255, 255),
+        background: tuple = (0, 0, 0),
+    ):
+        pixel = Image.new(
+            "RGB", (self._pixel_width, self._pixel_height), color=background
+        )
         draw = ImageDraw.Draw(pixel)
         config = ImageFont.truetype(self._font_type, self._font_size)
         xy = offset
-        draw.text(xy=xy, text=text, fill=1, font=config)
+        draw.text(xy=xy, text=text, fill=pattern, font=config)
         matrix = np.array(list(pixel.getdata())).reshape(
-            (self._pixel_height, self._pixel_width)
+            (self._pixel_height, self._pixel_width, 3)
         )
         return matrix
 
