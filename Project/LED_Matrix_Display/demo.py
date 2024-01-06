@@ -22,7 +22,7 @@ def main() -> None:
     for a in range(-15, 16):
         pxrgb.draw(img0, (0, a))
         pxrgb.display()
-        pxrgb.clear_matrix()
+        pxrgb.clear()
         time.sleep(0.05)
     pxrgb.display()
 
@@ -30,7 +30,7 @@ def main() -> None:
     for b in range(-32, 16):
         pxbool.draw(txt, (b, 0))
         pxbool.display((32, 32, 0), (0, 0, 16))
-        pxbool.clear_matrix()
+        pxbool.clear()
         time.sleep(0.05)
     pxbool.display((0, 0, 0), (0, 0, 0))
 
@@ -38,19 +38,19 @@ def main() -> None:
     for c in range(5):
         pxrgb.draw(img0, (0, 0))
         pxrgb.display()
-        pxrgb.clear_matrix()
+        pxrgb.clear()
         time.sleep(0.2)
         pxrgb.draw(img1, (0, 0))
         pxrgb.display()
-        pxrgb.clear_matrix()
+        pxrgb.clear()
         time.sleep(0.2)
         pxrgb.draw(img0, (0, 0))
         pxrgb.display()
-        pxrgb.clear_matrix()
+        pxrgb.clear()
         time.sleep(0.2)
         pxrgb.draw(img2, (0, 0))
         pxrgb.display()
-        pxrgb.clear_matrix()
+        pxrgb.clear()
         time.sleep(0.2)
     pxrgb.display()
 
