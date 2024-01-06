@@ -86,7 +86,7 @@ class PixelBool(Pixel):
             matrix=matrix, xy=xy, matrix_heigh=matrix_heigh, matrix_width=matrix_width
         )
 
-    def display(self, pattern: tuple = (1, 1, 1), background: tuple = (0, 0, 0)):
+    def display(self, pattern: tuple = (255, 255, 255), background: tuple = (0, 0, 0)):
         formatted_pixel = np.copy(self._pixel)
         for row in range(0, self._pixel_height, 2):
             formatted_pixel[row, :] = formatted_pixel[row, ::-1]
