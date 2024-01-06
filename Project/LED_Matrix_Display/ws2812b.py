@@ -45,10 +45,16 @@ class Pixel:
         start_y = max(0, y)
         end_y = min(self._pixel_height, y + matrix_heigh)
         cropped_matrix = matrix[start_y - y : end_y - y, start_x - x : end_x - x]
+        pixel = np.copy(self._pixel)
         try:
-            self._pixel[start_y:end_y, start_x:end_x] = cropped_matrix
+            for y in range(start_y, end_y):
+                for x in range(start_x, end_x):
+                    value = cropped_matrix[y - start_y, x - start_x]
+                    if not np.any(value):
+                        continue
+                    self._pixel[y, x] = value
         except:
-            pass
+            self._pixel[start_y:end_y, start_x:end_x] = pixel
 
     def clear(self) -> None:
         self._pixel[:, :] = 0
@@ -60,7 +66,7 @@ class PixelRGB(Pixel):
         self._pixel = np.zeros((self._pixel_height, self._pixel_width, 3), dtype=int)
 
     def draw(self, matrix: np, xy: tuple) -> None:
-        matrix_heigh, matrix_width, num = matrix.shape
+        matrix_heigh, matrix_width, _ = matrix.shape
         super().draw(
             matrix=matrix, xy=xy, matrix_heigh=matrix_heigh, matrix_width=matrix_width
         )
