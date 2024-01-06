@@ -109,6 +109,10 @@
     ```bash
     sudo apt install raspi-config
     ```
+    CMake
+    ```bash
+    sudo apt install cmake
+    ```
     清除套件安裝包
     ```bash
     sudo apt clean
@@ -123,6 +127,11 @@
 
 - ### 安裝 Python 模組
     套件清單：[requirement.txt](requirement.txt)
+    
+    更新 PIP
+    ```bash
+    pip install --upgrade pip setuptools wheel
+    ```
     ```bash
     pip install -r requirement.txt
     ```
