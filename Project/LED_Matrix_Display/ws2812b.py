@@ -47,7 +47,7 @@ class Pixel:
         cropped_matrix = matrix[start_y - y : end_y - y, start_x - x : end_x - x]
         self._pixel[start_y:end_y, start_x:end_x] += cropped_matrix
 
-    def clear_matrix(self) -> None:
+    def clear(self) -> None:
         self._pixel[:, :] = 0
 
 
