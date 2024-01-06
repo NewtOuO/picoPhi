@@ -96,22 +96,10 @@
     sudo reboot
     ```
 
-- ### 安裝依賴套件
-    PIP
+- ### 安裝系統套件
+    安裝必要套件
     ```bash
-    sudo apt install python3-pip
-    ```
-    Python Virtual Environment
-    ```bash
-    sudo apt install python3.10-venv
-    ```
-    樹莓派設定工具
-    ```bash
-    sudo apt install raspi-config
-    ```
-    CMake
-    ```bash
-    sudo apt install cmake
+    sudo apt install python3-pip python3.10-venv raspi-config cmake libjpeg-dev zlib1g-dev
     ```
     清除套件安裝包
     ```bash
