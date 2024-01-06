@@ -132,11 +132,12 @@
     ```bash
     pip install --upgrade pip setuptools wheel
     ```
-    ```bash
-    pip install -r requirement.txt
-    ```
+    安裝必要模組
     ```bash
     python3 -m pip install --force-reinstall adafruit-blinka
+    ```
+    ```bash
+    pip install -r requirement.txt
     ```
     清除模組安裝包
     ```bash
